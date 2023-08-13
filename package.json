@@ -14,7 +14,7 @@
     "build:reference": "pnpm --filter js-api-generator run build",
     "build:astro": "astro build",
     "build:i18n": "pnpm --filter docs-i18n-tracker run build",
-    "build": "pnpm dev:setup && pnpm build:reference && pnpm build:astro && pnpm build:i18n",
+    "build": "pnpm dev:setup && pnpm build:reference && pnpm build:astro",
     "preview": "astro preview"
   },
   "dependencies": {

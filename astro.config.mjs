@@ -4,6 +4,7 @@ import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import locales from './locales.json';
 import configGenerator from './src/plugins/configGenerator';
+import i18nGenerator from './packages/i18n-tracker/src';
 
 await configGenerator();
 
@@ -121,6 +122,7 @@ export default defineConfig({
 			locales,
 			lastUpdated: true,
 		}),
+		i18nGenerator(),
 	],
 	markdown: {
 		shikiConfig: {
